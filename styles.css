@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.cv-container {
+    background: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cv-header {
+    background-color: #003f7f;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 5px solid #0056b3;
+}
+
+.cv-header h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cv-header p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.profile-section {
+    display: flex;
+    background-color: #e8f2ff;
+    padding: 20px;
+    gap: 20px;
+    border-bottom: 5px solid #0056b3;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.summary {
+    flex: 1;
+}
+
+.summary h2 {
+    font-size: 20px;
+    color: #003f7f;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+.summary p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.skills, .experience, .education, .additional-info {
+    padding: 20px;
+    border-bottom: 2px solid #e8f2ff;
+}
+
+.skills h2, .experience h2, .education h2, .additional-info h2 {
+    font-size: 20px;
+    color: #003f7f;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.skills h2 i, .experience h2 i, .education h2 i, .additional-info h2 i {
+    margin-right: 8px;
+    color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+ul li i {
+    margin-right: 10px;
+    color: #0056b3;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #003f7f;
+    font-weight: 500;
+}
+
+.job p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+a {
+    color: #e8f2ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
