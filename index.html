@@ -8,30 +8,58 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        html, body { font-family: "Roboto", sans-serif; background-color: #f0f4f8; margin: 0; padding: 0; }
+        html, body {
+            font-family: "Roboto", sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
         .header-banner {
             background: linear-gradient(145deg, #2A3D5F, #3B4E6E);
-            color: #ffffff; text-align: center;
-            padding: 25px 10px; font-size: 44px;
-            font-weight: bold; letter-spacing: 2px;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px 10px;
+            font-size: 44px;
+            font-weight: bold;
+            letter-spacing: 2px;
         }
         .section-title {
-            background-color: #4A6E9F; color: #ffffff;
-            padding: 10px; font-weight: bold; font-size: 20px;
-            border-radius: 5px 5px 0 0; margin-bottom: 15px;
+            background-color: #4A6E9F;
+            color: #ffffff;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 5px 5px 0 0;
+            margin-bottom: 15px;
         }
         .w3-content {
-            background: #ffffff; border-radius: 10px;
-            padding: 20px; box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .profile-photo img {
+            border-radius: 10px;
+            width: 70%;
+            display: block;
+            margin: 0 auto 20px auto;
+            object-fit: cover;
+            max-height: 220px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         }
         ul { padding-left: 20px; }
         ul li { margin-bottom: 8px; }
         footer {
-            margin-top: 30px; padding: 20px; text-align: center;
-            background: linear-gradient(145deg, #2A3D5F, #3B4E6E); color: #ffffff;
+            margin-top: 30px;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(145deg, #2A3D5F, #3B4E6E);
+            color: #ffffff;
         }
+        footer a { color: #cfd8e3; }
     </style>
 </head>
+
 <body>
 
 <div class="header-banner">
@@ -40,46 +68,57 @@
 
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
     <div class="w3-row-padding">
-<div class="w3-white w3-card-4 w3-text-grey">
+
+        <!-- LEFT COLUMN -->
+        <div class="w3-third">
+            <div class="w3-white w3-card-4 w3-text-grey">
+
+                <!-- PROFIELFOTO -->
                 <div class="profile-photo">
                     <img src="Images/02.jpg" alt="Sander Jacobs">
                 </div>
-        <!-- LEFT COLUMN -->
-        <div class="w3-third">
-            <div class="w3-white w3-card-4 w3-text-grey w3-padding">
-                <p><i class="fa fa-home w3-margin-right"></i>Nijmegen</p>
-                <p><i class="fa fa-phone w3-margin-right"></i>06-46756972</p>
-                <p><i class="fa fa-envelope w3-margin-right"></i>sander_jac@hotmail.com</p>
-                <hr>
 
-                <p class="section-title"><i class="fa fa-graduation-cap w3-margin-right"></i>OPLEIDING</p>
-                <p><b>MBO Bedrijfskunde</b></p>
-                <p class="w3-small">
-                    Aangevuld met jarenlange praktijkervaring op HBO-werk- en -denkniveau
-                    binnen bedrijfsvoering, coaching, begeleiding en besluitvorming.
-                </p>
-                <hr>
+                <div class="w3-container">
+                    <p><i class="fa fa-home w3-margin-right"></i>Nijmegen</p>
+                    <p><i class="fa fa-phone w3-margin-right"></i>06-46756972</p>
+                    <p><i class="fa fa-envelope w3-margin-right"></i>sander_jac@hotmail.com</p>
+                    <hr>
 
-                <p class="section-title"><i class="fa fa-check-square-o w3-margin-right"></i>KERNVAARDIGHEDEN</p>
-                <ul class="w3-small">
-                    <li>Intakegesprekken & vraagverheldering</li>
-                    <li>Opstellen plannen van aanpak</li>
-                    <li>Coachen & motiveren van mensen</li>
-                    <li>Balans empathie en duidelijke grenzen</li>
-                    <li>Resultaatgericht begeleiden</li>
-                    <li>Rapporteren & dossieropbouw</li>
-                    <li>Stakeholdermanagement</li>
-                    <li>Besluitvaardig & stressbestendig</li>
-                </ul>
-                <hr>
+                    <p class="section-title">
+                        <i class="fa fa-graduation-cap w3-margin-right"></i>OPLEIDING
+                    </p>
+                    <p><b>MBO Bedrijfskunde</b></p>
+                    <p class="w3-small">
+                        Aangevuld met jarenlange praktijkervaring op HBO-werk- en -denkniveau
+                        binnen bedrijfsvoering, begeleiding, besluitvorming en procesregie.
+                    </p>
+                    <hr>
 
-                <p class="section-title"><i class="fa fa-users w3-margin-right"></i>PROFIELKENMERKEN</p>
-                <ul class="w3-small">
-                    <li>Empathisch én assertief</li>
-                    <li>Zelfstandig regievoerder</li>
-                    <li>Maatschappelijk betrokken</li>
-                    <li>Communicatief sterk</li>
-                </ul>
+                    <p class="section-title">
+                        <i class="fa fa-check-square-o w3-margin-right"></i>KERNVAARDIGHEDEN
+                    </p>
+                    <ul class="w3-small">
+                        <li>Intakegesprekken & vraagverheldering</li>
+                        <li>Opstellen plannen van aanpak</li>
+                        <li>Begeleiden & activeren van mensen</li>
+                        <li>Empathisch én duidelijk begrenzen</li>
+                        <li>Resultaatgericht werken</li>
+                        <li>Dossieropbouw & rapportage</li>
+                        <li>Stakeholdermanagement</li>
+                        <li>Stressbestendig & besluitvaardig</li>
+                    </ul>
+                    <hr>
+
+                    <p class="section-title">
+                        <i class="fa fa-users w3-margin-right"></i>PERSOONLIJK
+                    </p>
+                    <ul class="w3-small">
+                        <li>Empathisch en assertief</li>
+                        <li>Zelfstandig en verantwoordelijk</li>
+                        <li>Maatschappelijk betrokken</li>
+                        <li>Sterk in communicatie</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -87,64 +126,72 @@
         <div class="w3-twothird">
 
             <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <p class="section-title"><i class="fa fa-user-circle w3-margin-right"></i>PROFIEL</p>
+                <p class="section-title">
+                    <i class="fa fa-user-circle w3-margin-right"></i>PROFIEL
+                </p>
                 <p>
-                    Resultaatgerichte professional met ruime ervaring in begeleiding,
-                    besluitvorming en het werken met mensen in complexe situaties.
-                    Ik combineer empathie met duidelijke kaders en ben gewend om
-                    zelfstandig regie te voeren over dossiers, gesprekken en trajecten.
-                    Mijn kracht ligt in het activeren van mensen, het vertalen van
-                    problematiek naar concrete stappen en het verbinden van belangen.
-                    De rol van werkconsulent sluit perfect aan bij mijn ervaring en motivatie
-                    om impact te maken binnen het sociaal domein.
+                    Resultaatgerichte professional met ruime ervaring in het begeleiden
+                    van mensen, het voeren van gesprekken en het nemen van regie in
+                    complexe situaties. Ik combineer mensgericht werken met duidelijke
+                    kaders en ben gewend zelfstandig dossiers en trajecten te beheren.
+                    De rol van werkconsulent past bij mijn overtuiging dat duurzame
+                    resultaten ontstaan door aandacht, structuur en verantwoordelijkheid.
                 </p>
             </div>
 
             <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <p class="section-title"><i class="fa fa-briefcase w3-margin-right"></i>WERKERVARING</p>
+                <p class="section-title">
+                    <i class="fa fa-briefcase w3-margin-right"></i>WERKERVARING
+                </p>
 
                 <h5><b>Backoffice & Operations Coordinator — Taxi Vervoerscentrale Nederland B.V.</b></h5>
-                <h6 class="w3-text-light-blue"><i class="fa fa-calendar w3-margin-right"></i>2024 – 2025</h6>
+                <h6 class="w3-text-light-blue">
+                    <i class="fa fa-calendar w3-margin-right"></i>2024 – 2025
+                </h6>
                 <ul>
-                    <li>Voeren van gesprekken met medewerkers over inzetbaarheid en functioneren.</li>
-                    <li>Analyseren van individuele situaties en bepalen van vervolgstappen.</li>
+                    <li>Voeren van gesprekken over inzetbaarheid, functioneren en ontwikkeling.</li>
+                    <li>Analyseren van persoonlijke situaties en bepalen van vervolgstappen.</li>
                     <li>Opstellen van concrete afspraken en bewaken van voortgang.</li>
-                    <li>Schakelen tussen belangen van organisatie en individu.</li>
-                    <li>Structureren van dossiers en rapportages.</li>
+                    <li>Schakelen tussen organisatiebelang en individuele belangen.</li>
+                    <li>Structureren en vastleggen van dossiers.</li>
                 </ul>
                 <hr>
 
                 <h5><b>Operationeel Manager & Aandeelhouder (30%) — Klaassen Total Security</b></h5>
-                <h6 class="w3-text-light-blue"><i class="fa fa-calendar w3-margin-right"></i>2014 – 2018</h6>
+                <h6 class="w3-text-light-blue">
+                    <i class="fa fa-calendar w3-margin-right"></i>2014 – 2018
+                </h6>
                 <ul>
                     <li>Ingekocht voor 30% en mede verantwoordelijk voor operationeel beleid.</li>
-                    <li>Begeleiden en coachen van medewerkers binnen verschillende trajecten.</li>
+                    <li>Begeleiden en coachen van medewerkers.</li>
                     <li>Voeren van intake- en voortgangsgesprekken.</li>
-                    <li>Besluitvorming rondom inzetbaarheid en ontwikkeling.</li>
-                    <li>Onderhouden van externe contacten en samenwerkingspartners.</li>
+                    <li>Besluitvorming over inzetbaarheid en ontwikkeling.</li>
+                    <li>Onderhouden van externe samenwerkingen.</li>
                 </ul>
                 <hr>
 
                 <h5><b>Eigenaar / Directeur — Dutch Security Enforcement</b></h5>
-                <h6 class="w3-text-light-blue"><i class="fa fa-calendar w3-margin-right"></i>2007 – 2024</h6>
+                <h6 class="w3-text-light-blue">
+                    <i class="fa fa-calendar w3-margin-right"></i>2007 – 2024
+                </h6>
                 <ul>
-                    <li>Langdurige begeleiding van medewerkers met uiteenlopende achtergronden.</li>
-                    <li>Coachen op gedrag, verantwoordelijkheid en ontwikkeling.</li>
+                    <li>Langdurige begeleiding van medewerkers met diverse achtergronden.</li>
+                    <li>Coaching op gedrag, verantwoordelijkheid en ontwikkeling.</li>
                     <li>Opstellen van plannen en sturen op resultaat.</li>
                     <li>Onderhandelen en verbinden van belangen.</li>
-                    <li>Verantwoordelijk voor eindbeslissingen en continuïteit.</li>
+                    <li>Eindverantwoordelijk voor continuïteit en kwaliteit.</li>
                 </ul>
             </div>
 
             <div class="w3-container w3-card w3-white">
-                <p class="section-title"><i class="fa fa-road w3-margin-right"></i>MOTIVATIE</p>
+                <p class="section-title">
+                    <i class="fa fa-road w3-margin-right"></i>MOTIVATIE
+                </p>
                 <p>
                     Ik wil mij inzetten als werkconsulent binnen het sociaal domein,
-                    waar mensgericht werken en resultaat samenkomen.
-                    Bender spreekt mij aan door de combinatie van vaste zekerheid,
-                    professionele ontwikkeling en impactvolle opdrachten.
-                    Ik neem verantwoordelijkheid, werk zelfstandig en geloof in
-                    aandacht als basis voor duurzame resultaten.
+                    waar mensgericht werken en resultaat samenkomen. Bender spreekt
+                    mij aan door de combinatie van vaste zekerheid, professionele
+                    ontwikkeling en inhoudelijke impact.
                 </p>
             </div>
 
@@ -161,4 +208,3 @@
 
 </body>
 </html>
-
