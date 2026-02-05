@@ -10,73 +10,136 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-html,body,h1,h2,h3,h4,h5,h6{font-family:"Roboto",sans-serif;background:#f0f4f8}
+html,body,h1,h2,h3,h4,h5,h6{
+    font-family:"Roboto",sans-serif;
+    background:#f0f4f8;
+    margin:0;
+    padding:0;
+}
+
 .header-banner{
-background:linear-gradient(145deg,#2A3D5F,#3B4E6E);
-color:#fff;text-align:center;padding:20px;
-font-size:52px;font-weight:700;letter-spacing:2px}
+    background:linear-gradient(145deg,#2A3D5F,#3B4E6E);
+    color:#fff;
+    text-align:center;
+    padding:20px 10px;
+    font-size:52px;
+    font-weight:700;
+    letter-spacing:2px;
+    box-shadow:0 6px 12px rgba(0,0,0,.5);
+}
+
+.w3-card{
+    border-radius:10px;
+}
+
 .section-title{
-background:#4A6E9F;color:#fff;padding:10px;
-font-size:22px;font-weight:600;border-radius:5px;margin-bottom:15px}
-.skills-list{list-style:none;padding:0}
-.skills-list li{margin:8px 0;display:flex;align-items:center}
-.skills-list li i{margin-right:12px;color:#4A6E9F}
+    background:#4A6E9F;
+    color:#fff;
+    padding:10px;
+    font-size:22px;
+    font-weight:600;
+    border-radius:5px;
+    margin-bottom:15px;
+}
+
+.profile-photo img{
+    width:70%;
+    max-height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    display:block;
+    margin:15px auto;
+    box-shadow:0 8px 16px rgba(0,0,0,.3);
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.profile-photo img:hover{
+    transform:scale(1.05);
+    box-shadow:0 12px 24px rgba(0,0,0,.5);
+}
+
+.skills-list{
+    list-style:none;
+    padding:0;
+}
+
+.skills-list li{
+    margin:8px 0;
+    display:flex;
+    align-items:center;
+}
+
+.skills-list li i{
+    margin-right:12px;
+    color:#4A6E9F;
+}
 </style>
 </head>
 
-<body>
+<body class="w3-light-grey">
 
-<div class="header-banner">SANDER JACOBS</div>
+<div class="header-banner">
+    SANDER JACOBS
+</div>
 
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 <div class="w3-row-padding">
 
 <!-- LINKER KOLOM -->
 <div class="w3-third">
-<div class="w3-card w3-white w3-padding">
+<div class="w3-card w3-white w3-text-grey">
 
-<p><i class="fa fa-home fa-fw"></i> Nijmegen, Nederland</p>
-<p><i class="fa fa-phone fa-fw"></i> 06-46756972</p>
-<p><i class="fa fa-envelope fa-fw"></i> sander_jac@hotmail.com</p>
-<p><i class="fa fa-globe fa-fw"></i>
-<a href="https://sjacobs86.github.io/Portfolio_Website/" target="_blank">Portfolio website</a></p>
+    <!-- FOTO -->
+    <div class="profile-photo">
+        <img src="Images/02.jpg" alt="Sander Jacobs">
+    </div>
 
-<hr>
+    <div class="w3-container">
+        <p><i class="fa fa-home fa-fw w3-margin-right"></i>Nijmegen, Nederland</p>
+        <p><i class="fa fa-phone fa-fw w3-margin-right"></i>06-46756972</p>
+        <p><i class="fa fa-envelope fa-fw w3-margin-right"></i>sander_jac@hotmail.com</p>
+        <p><i class="fa fa-globe fa-fw w3-margin-right"></i>
+            <a href="https://sjacobs86.github.io/Portfolio_Website/" target="_blank">
+                Portfolio website
+            </a>
+        </p>
 
-<p class="section-title"><i class="fa fa-certificate"></i> OPLEIDINGEN</p>
+        <hr>
 
-<h5><b>Zelfstudie Data-analyse & Programmeertools (2024)</b></h5>
-<p>
-Intensieve zelfstudie gericht op data-analyse, rapportage en automatisering ter ondersteuning van besluitvorming en planning.
-</p>
-<ul>
-<li>Python (analyse, automatisering, visualisatie)</li>
-<li>Power BI (dashboards & rapportages)</li>
-<li>MySQL (databases & queries)</li>
-<li>Visual Studio (ontwikkelomgeving)</li>
-</ul>
+        <p class="section-title"><i class="fa fa-certificate"></i> OPLEIDINGEN</p>
 
-<hr>
+        <h5><b>Zelfstudie Data-analyse & Programmeertools – 2024</b></h5>
+        <p>
+        Gericht op analyse, rapportage en ondersteuning van planning en besluitvorming.
+        </p>
+        <ul>
+            <li>Python – analyse & automatisering</li>
+            <li>Power BI – dashboards & rapportages</li>
+            <li>MySQL – databases & queries</li>
+            <li>Visual Studio – ontwikkelomgeving</li>
+        </ul>
 
-<h5><b>Beveiligingsbeambte – TCE Eemhaven Security (2007)</b></h5>
-<p>
-Opleiding gericht op procedures, rapportage, risicoanalyse en naleving van wet- en regelgeving.
-</p>
+        <hr>
 
-<hr>
+        <h5><b>Beveiligingsbeambte – TCE Eemhaven Security (2007)</b></h5>
+        <p>
+        Opleiding gericht op procedures, rapportage, toezicht en wet- en regelgeving.
+        </p>
 
-<h5><b>CIOS – Sport & Coaching (2005)</b></h5>
-<p>
-Ontwikkeling van didactische vaardigheden, coachen, plannen van lessen en begeleiden van groepen.
-</p>
+        <hr>
 
-<hr>
+        <h5><b>CIOS – Sport & Coaching (2005)</b></h5>
+        <p>
+        Didactiek, planning van lessen en begeleiding van groepen.
+        </p>
 
-<h5><b>Bedrijfskunde – ROC Nijmegen (2002)</b></h5>
-<p>
-Financiële administratie, bedrijfsvoering, budgettering en kostenanalyse.
-</p>
+        <hr>
 
+        <h5><b>Bedrijfskunde – ROC Nijmegen (2002)</b></h5>
+        <p>
+        Boekhouding, budgettering en bedrijfsvoering.
+        </p>
+    </div>
 </div>
 </div>
 
@@ -84,59 +147,69 @@ Financiële administratie, bedrijfsvoering, budgettering en kostenanalyse.
 <div class="w3-twothird">
 
 <div class="w3-card w3-white w3-padding w3-margin-bottom">
-<p class="section-title"><i class="fa fa-user-circle"></i> OVER MIJ</p>
-<p>
-Zeer ervaren professional met een sterke achtergrond in operationeel management, planning en personeelscoördinatie. Ik beschik over een uitstekend overzicht, werk gestructureerd en ben gewend om verantwoordelijkheid te dragen voor dagelijkse bedrijfsvoering, roosters en inzetbaarheid van personeel. Door mijn communicatieve vaardigheden en mensgerichte aanpak weet ik medewerkers op een prettige maar duidelijke manier aan te sturen. Betrouwbaarheid, discretie en zelfstandigheid vormen de kern van mijn werkwijze.
-</p>
+    <p class="section-title"><i class="fa fa-user-circle"></i> OVER MIJ</p>
+    <p>
+    Zeer ervaren professional met een sterke achtergrond in operationeel management,
+    personeelsplanning en coördinatie. Ik werk gestructureerd, zelfstandig en ben gewend
+    om verantwoordelijkheid te dragen voor inzetbaarheid, roosters en verzuim.
+    Betrouwbaarheid, discretie en duidelijke communicatie staan centraal in mijn werkwijze.
+    </p>
 </div>
 
 <div class="w3-card w3-white w3-padding w3-margin-bottom">
-<p class="section-title"><i class="fa fa-cogs"></i> VAARDIGHEDEN</p>
-<ul class="skills-list">
-<li><i class="fa fa-calendar"></i> Planning & roostering van personeel</li>
-<li><i class="fa fa-exchange"></i> Verzuimbegeleiding & inzetbaarheid</li>
-<li><i class="fa fa-comments"></i> Communicatie & gespreksvoering</li>
-<li><i class="fa fa-file-text-o"></i> Rapportage & vastlegging</li>
-<li><i class="fa fa-users"></i> Operationeel leiderschap</li>
-<li><i class="fa fa-car"></i> Flexibel inzetbaar</li>
-<li><i class="fa fa-shield"></i> Integriteit, discretie & betrouwbaarheid</li>
-<li><i class="fa fa-language"></i> Nederlands (moedertaal), Engels (vloeiend)</li>
-</ul>
+    <p class="section-title"><i class="fa fa-cogs"></i> VAARDIGHEDEN</p>
+    <ul class="skills-list">
+        <li><i class="fa fa-calendar"></i> Planning & roostering</li>
+        <li><i class="fa fa-exchange"></i> Verzuimbegeleiding</li>
+        <li><i class="fa fa-comments"></i> Communicatie & gespreksvoering</li>
+        <li><i class="fa fa-file-text-o"></i> Rapportage & vastlegging</li>
+        <li><i class="fa fa-users"></i> Operationeel leiderschap</li>
+        <li><i class="fa fa-car"></i> Flexibel inzetbaar</li>
+        <li><i class="fa fa-shield"></i> Integriteit & discretie</li>
+        <li><i class="fa fa-language"></i> Nederlands & Engels</li>
+    </ul>
 </div>
 
 <div class="w3-card w3-white w3-padding">
-<p class="section-title"><i class="fa fa-suitcase"></i> WERKERVARING</p>
+    <p class="section-title"><i class="fa fa-suitcase"></i> WERKERVARING</p>
 
-<h5><b>Bedrijfsleider | Taxi Vervoerscentrale</b></h5>
-<h6 class="w3-text-blue"><i class="fa fa-calendar"></i> Dec 2024 – Aug 2025</h6>
-<p>
-Als bedrijfsleider verantwoordelijk voor de dagelijkse operationele aansturing van de vervoerscentrale. Mijn werkzaamheden bestonden uit het plannen van chauffeurs, het verwerken en beoordelen van ziekmeldingen, het bewaken van inzetbaarheid en het oplossen van roosterknelpunten. Ik had intensief contact met personeel, fungeerde als aanspreekpunt bij verzuim en legde bevindingen zorgvuldig vast. Deze functie vereiste zelfstandigheid, duidelijke communicatie en een goed beoordelingsvermogen.
-</p>
+    <h5><b>Bedrijfsleider | Taxi Vervoerscentrale</b></h5>
+    <h6 class="w3-text-blue"><i class="fa fa-calendar"></i> Dec 2024 – Aug 2025</h6>
+    <p>
+    Verantwoordelijk voor dagelijkse planning van chauffeurs, verwerking van ziekmeldingen,
+    bewaken van inzetbaarheid en oplossen van roosterknelpunten. Aanspreekpunt voor personeel
+    en zorgvuldige vastlegging van meldingen en bevindingen.
+    </p>
 
-<hr>
+    <hr>
 
-<h5><b>Eigenaar / Directeur | Dutch Security Enforcement</b></h5>
-<h6 class="w3-text-blue"><i class="fa fa-calendar"></i> Jan 2007 – Jan 2024</h6>
-<p>
-Oprichter en eindverantwoordelijke voor een beveiligingsorganisatie. Dagelijks verantwoordelijk voor personeelsplanning, roosters, inzetbaarheid, verzuim, klantafspraken en operationele processen. Ontwikkelde planningsstructuren, rapportages en werkinstructies. Combineerde strategisch overzicht met hands-on uitvoering.
-</p>
+    <h5><b>Eigenaar / Directeur | Dutch Security Enforcement</b></h5>
+    <h6 class="w3-text-blue"><i class="fa fa-calendar"></i> Jan 2007 – Jan 2024</h6>
+    <p>
+    Eindverantwoordelijk voor personeelsplanning, roosters, verzuim, klantafspraken en
+    operationele processen binnen een middelgrote beveiligingsorganisatie.
+    </p>
 
-<hr>
+    <hr>
 
-<h5><b>Aandeelhouder / Operationeel Manager | Klaassen Total Security</b></h5>
-<h6 class="w3-text-blue"><i class="fa fa-calendar"></i> Jan 2014 – Jan 2018</h6>
-<p>
-Verantwoordelijk voor operationele planning, projectcoördinatie en personeelsinzet. Opzetten van meldkamerprocessen, roosters en instructies. Intensief betrokken bij dagelijkse planning en naleving van procedures.
-</p>
+    <h5><b>Aandeelhouder / Operationeel Manager | Klaassen Total Security</b></h5>
+    <h6 class="w3-text-blue"><i class="fa fa-calendar"></i> Jan 2014 – Jan 2018</h6>
+    <p>
+    Operationele planning, projectcoördinatie, meldkamerprocessen en personeelsinzet.
+    </p>
+</div>
 
 </div>
-</div>
-
 </div>
 </div>
 
 <footer class="w3-center w3-padding" style="background:#2A3D5F;color:#fff">
-<p>Portfolio: <a href="https://sjacobs86.github.io/Portfolio_Website/" style="color:#fff">sjacobs86.github.io</a></p>
+    <p>
+        Portfolio:
+        <a href="https://sjacobs86.github.io/Portfolio_Website/" style="color:#fff">
+            sjacobs86.github.io
+        </a>
+    </p>
 </footer>
 
 </body>
