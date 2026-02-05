@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sander Jacobs - Motivatiebrief</title>
+<title>Sander Jacobs - CV</title>
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
@@ -22,10 +22,14 @@ html,body,h1,h2,h3,h4,h5,h6{
     color:#fff;
     text-align:center;
     padding:20px 10px;
-    font-size:46px;
+    font-size:52px;
     font-weight:700;
     letter-spacing:2px;
     box-shadow:0 6px 12px rgba(0,0,0,.5);
+}
+
+.w3-card{
+    border-radius:10px;
 }
 
 .section-title{
@@ -38,15 +42,36 @@ html,body,h1,h2,h3,h4,h5,h6{
     margin-bottom:15px;
 }
 
-.w3-card{
+.profile-photo img{
+    width:70%;
+    max-height:200px;
+    object-fit:cover;
     border-radius:10px;
-    box-shadow:0 10px 20px rgba(0,0,0,.2);
+    display:block;
+    margin:15px auto;
+    box-shadow:0 8px 16px rgba(0,0,0,.3);
+    transition:transform .3s ease, box-shadow .3s ease;
 }
 
-.letter-content{
-    line-height:1.7;
-    color:#333;
-    font-size:16px;
+.profile-photo img:hover{
+    transform:scale(1.05);
+    box-shadow:0 12px 24px rgba(0,0,0,.5);
+}
+
+.skills-list{
+    list-style:none;
+    padding:0;
+}
+
+.skills-list li{
+    margin:8px 0;
+    display:flex;
+    align-items:center;
+}
+
+.skills-list li i{
+    margin-right:12px;
+    color:#4A6E9F;
 }
 </style>
 </head>
@@ -54,78 +79,132 @@ html,body,h1,h2,h3,h4,h5,h6{
 <body class="w3-light-grey">
 
 <div class="header-banner">
-    MOTIVATIEBRIEF
+    SANDER JACOBS
 </div>
 
-<div class="w3-content w3-margin-top" style="max-width:1000px;">
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<div class="w3-row-padding">
 
-<div class="w3-card w3-white w3-padding w3-margin-bottom">
+<!-- LINKER KOLOM -->
+<div class="w3-third">
+<div class="w3-card w3-white w3-text-grey">
 
-    <p class="section-title">
-        <i class="fa fa-envelope"></i> Betreft: Motivatie planning / verzuim / operationele ondersteuning
-    </p>
+    <!-- FOTO -->
+    <div class="profile-photo">
+        <img src="Images/02.jpg" alt="Sander Jacobs">
+    </div>
 
-    <div class="letter-content">
-
-        <p>Geachte heer/mevrouw,</p>
-
-        <p>
-        Met deze brief wil ik mijn interesse kenbaar maken voor een functie waarin planning,
-        personeelscoördinatie en mensgericht werken centraal staan. Vanuit mijn brede ervaring
-        in operationeel management ben ik gewend om zelfstandig, zorgvuldig en met overzicht
-        te werken binnen dynamische organisaties.
+    <div class="w3-container">
+        <p><i class="fa fa-home fa-fw w3-margin-right"></i>Nijmegen, Nederland</p>
+        <p><i class="fa fa-phone fa-fw w3-margin-right"></i>06-46756972</p>
+        <p><i class="fa fa-envelope fa-fw w3-margin-right"></i>sander_jac@hotmail.com</p>
+        <p><i class="fa fa-globe fa-fw w3-margin-right"></i>
+            <a href="https://sjacobs86.github.io/Portfolio_Website/" target="_blank">
+                Portfolio website
+            </a>
         </p>
 
-        <p>
-        In mijn meest recente functie als <strong>bedrijfsleider bij een Taxi Vervoerscentrale</strong>
-        was ik verantwoordelijk voor de dagelijkse planning van chauffeurs, het verwerken en
-        beoordelen van ziekmeldingen en het bewaken van inzetbaarheid. Ik fungeerde hierbij als
-        aanspreekpunt voor medewerkers, hield overzicht op roosters en legde meldingen en
-        bevindingen zorgvuldig vast. Deze rol vereiste duidelijke communicatie, discretie en
-        het vermogen om situaties objectief te beoordelen.
-        </p>
+        <hr>
 
-        <p>
-        Daarvoor heb ik ruim zeventien jaar een eigen beveiligingsorganisatie geleid.
-        In deze periode was ik verantwoordelijk voor personeelsplanning, verzuim,
-        rapportage en naleving van procedures. Ik combineerde hierbij strategisch inzicht
-        met een hands-on aanpak en werkte dagelijks samen met medewerkers, opdrachtgevers
-        en externe partijen. Betrouwbaarheid, integriteit en structuur vormden hierbij altijd
-        de basis van mijn werkwijze.
-        </p>
+        <p class="section-title"><i class="fa fa-certificate"></i> OPLEIDINGEN</p>
 
-        <p>
-        Wat mij aanspreekt in een functie op oproep- of flexibele basis is de zelfstandigheid
-        en verantwoordelijkheid die daarbij horen. Ik werk gestructureerd, ben flexibel
-        inzetbaar en ga zorgvuldig om met vertrouwelijke informatie. Door mijn communicatieve
-        vaardigheden weet ik mensen op hun gemak te stellen, terwijl ik tegelijkertijd zorg
-        voor een correcte en heldere vastlegging.
-        </p>
+        <!-- OPLEIDINGEN ONGEWIJZIGD -->
+        <h5><b>Zelfstudie Data-analyse & Programmeertools – 2024</b></h5>
+        <p>Gericht op analyse, rapportage en ondersteuning van planning en besluitvorming.</p>
+        <ul>
+            <li>Python – analyse & automatisering</li>
+            <li>Power BI – dashboards & rapportages</li>
+            <li>MySQL – databases & queries</li>
+            <li>Visual Studio – ontwikkelomgeving</li>
+        </ul>
 
-        <p>
-        Graag licht ik mijn motivatie en ervaring verder toe in een persoonlijk gesprek.
-        Ik zie uw reactie met belangstelling tegemoet.
-        </p>
+        <hr>
 
-        <p>
-        Met vriendelijke groet,<br><br>
+        <h5><b>Beveiligingsbeambte – TCE Eemhaven Security (2007)</b></h5>
+        <p>Opleiding gericht op procedures, rapportage, toezicht en wet- en regelgeving.</p>
 
-        <strong>Sander Jacobs</strong><br>
-        Nijmegen<br>
-        06-46756972<br>
-        sander_jac@hotmail.com
-        </p>
+        <hr>
 
+        <h5><b>CIOS – Sport & Coaching (2005)</b></h5>
+        <p>Didactiek, plannen, begeleiden en coachen van individuen en groepen.</p>
+
+        <hr>
+
+        <h5><b>Bedrijfskunde – ROC Nijmegen (2002)</b></h5>
+        <p>Boekhouding, budgettering, bedrijfsvoering en organisatie-inrichting.</p>
     </div>
 </div>
+</div>
 
+<!-- RECHTER KOLOM -->
+<div class="w3-twothird">
+
+<div class="w3-card w3-white w3-padding w3-margin-bottom">
+    <p class="section-title"><i class="fa fa-user-circle"></i> OVER MIJ</p>
+    <p>
+    Operationeel manager met ruime ervaring binnen personenvervoer, planning en
+    personeelsaansturing. Sterk in het creëren van rust en overzicht in een dynamische
+    omgeving. Gewend om te sturen op KPI’s, processen te optimaliseren en medewerkers
+    te coachen met oog voor kwaliteit, efficiëntie en klanttevredenheid.
+    </p>
+</div>
+
+<div class="w3-card w3-white w3-padding w3-margin-bottom">
+    <p class="section-title"><i class="fa fa-cogs"></i> VAARDIGHEDEN</p>
+    <ul class="skills-list">
+        <li><i class="fa fa-users"></i> Aansturen planners & frontoffice</li>
+        <li><i class="fa fa-line-chart"></i> KPI-sturing & rapportages</li>
+        <li><i class="fa fa-random"></i> Procesoptimalisatie & continu verbeteren</li>
+        <li><i class="fa fa-comments"></i> Communicatie met medewerkers & vervoerders</li>
+        <li><i class="fa fa-calendar"></i> Planning vraag- & routegebonden vervoer</li>
+        <li><i class="fa fa-table"></i> Excel & data-analyse</li>
+        <li><i class="fa fa-heart"></i> Klantgericht & empathisch leiderschap</li>
+        <li><i class="fa fa-bolt"></i> Stressbestendig & besluitvaardig</li>
+    </ul>
+</div>
+
+<div class="w3-card w3-white w3-padding">
+    <p class="section-title"><i class="fa fa-suitcase"></i> WERKERVARING</p>
+
+    <h5><b>Bedrijfsleider / Operationeel Manager | Taxi Vervoerscentrale</b></h5>
+    <h6 class="w3-text-blue"><i class="fa fa-calendar"></i> Dec 2024 – Aug 2025</h6>
+    <p>
+    Verantwoordelijk voor de dagelijkse aansturing van planners en frontoffice medewerkers
+    binnen het doelgroepenvervoer. Focus op optimale planning, klanttevredenheid,
+    stiptheid en efficiënt gebruik van capaciteit. Monitoren van KPI’s, oplossen van
+    operationele knelpunten en afstemming met vervoerders over kwaliteit en uitvoering.
+    </p>
+
+    <hr>
+
+    <h5><b>Eigenaar / Directeur | Dutch Security Enforcement</b></h5>
+    <h6 class="w3-text-blue"><i class="fa fa-calendar"></i> Jan 2007 – Jan 2024</h6>
+    <p>
+    Eindverantwoordelijk voor bedrijfsvoering, personeelsmanagement en operationele
+    processen. Ervaring opgedaan met veranderprocessen, groei, contractbeheer,
+    budgettering en het ontwikkelen van medewerkers en teams.
+    </p>
+
+    <hr>
+
+    <h5><b>Aandeelhouder / Operationeel Manager | Klaassen Total Security</b></h5>
+    <h6 class="w3-text-blue"><i class="fa fa-calendar"></i> Jan 2014 – Jan 2018</h6>
+    <p>
+    Verantwoordelijk voor operationele planning, procesinrichting, meldkamerprocessen
+    en samenwerking met opdrachtgevers. Sterke focus op kwaliteit, continuïteit en
+    efficiëntie.
+    </p>
+</div>
+
+</div>
+</div>
 </div>
 
 <footer class="w3-center w3-padding" style="background:#2A3D5F;color:#fff">
     <p>
-        <i class="fa fa-user"></i> Sander Jacobs |
+        Portfolio:
         <a href="https://sjacobs86.github.io/Portfolio_Website/" style="color:#fff">
-            Portfolio
+            sjacobs86.github.io
         </a>
     </p>
 </footer>
