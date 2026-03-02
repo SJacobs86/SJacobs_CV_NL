@@ -1,198 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sander Jacobs - Professional CV</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        html, body, h1, h2, h3, h4, h5, h6 {
-            font-family: "Roboto", sans-serif;
-            background-color: #f0f4f8;
-            margin: 0;
-            padding: 0;
-        }
-        .header-banner {
-            background: linear-gradient(145deg, #2A3D5F, #3B4E6E);
-            color: #ffffff;
-            text-align: center;
-            padding: 20px 10px;
-            font-size: 56px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
-        }
-        .section-title {
-            background-color: #4A6E9F;
-            color: #ffffff;
-            padding: 10px;
-            font-weight: bold;
-            font-size: 22px;
-            border-radius: 5px 5px 0 0;
-            margin-bottom: 15px;
-        }
-        .profile-photo img {
-            border-radius: 10px;
-            width: 80%;
-            margin: 15px auto;
-            display: block;
-        }
-        .skills-list {
-            list-style: none;
-            padding: 0;
-        }
-        .skills-list li {
-            margin: 8px 0;
-            display: flex;
-            align-items: center;
-        }
-        .skills-list li i {
-            margin-right: 12px;
-            color: #4A6E9F;
-        }
-        .section-content {
-            margin: 10px 0;
-            line-height: 1.6;
-            color: #333;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sander Jacobs - CV</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background: #f4f7fa;
+    color: #2c3e50;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #1f2f46, #2e4a6b);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeDown 1s ease;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.header p {
+    margin-top: 10px;
+    opacity: 0.85;
+}
+
+/* LAYOUT */
+.container {
+    max-width: 1200px;
+    margin: -40px auto 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeUp 0.8s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid #2e4a6b;
+    padding-left: 10px;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* LISTS */
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+ul li i {
+    color: #2e4a6b;
+    margin-right: 10px;
+}
+
+/* JOB TITLE */
+.job-title {
+    font-weight: 600;
+}
+
+.job-period {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeDown {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 </head>
 
-<body class="w3-light-grey">
+<body>
 
-<div class="header-banner">
-    SANDER JACOBS
+<div class="header">
+    <h1>SANDER JACOBS</h1>
+    <p>Junior Adviseur Managementsystemen | ISO | Procesoptimalisatie</p>
 </div>
 
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-<div class="w3-row-padding">
+<div class="container">
 
-<!-- LEFT COLUMN -->
-<div class="w3-third">
-<div class="w3-white w3-text-grey w3-card-4">
+    <!-- LEFT COLUMN -->
+    <div class="card">
+        <img src="Images/02.jpg" alt="Sander Jacobs" class="profile-img">
 
-<div class="profile-photo">
-<img src="Images/02.jpg" alt="Sander Jacobs">
-</div>
+        <div class="section-title">Persoonlijke Gegevens</div>
+        <ul>
+            <li><i class="fa fa-calendar"></i>21-07-1986</li>
+            <li><i class="fa fa-map-marker"></i>Nijmegen</li>
+            <li><i class="fa fa-phone"></i>06-46756972</li>
+            <li><i class="fa fa-envelope"></i>sander_jac@hotmail.com</li>
+            <li><i class="fa fa-car"></i>Rijbewijs B</li>
+        </ul>
 
-<div class="w3-container">
-<p><i class="fa fa-calendar fa-fw w3-margin-right"></i>21-07-1986</p>
-<p><i class="fa fa-home fa-fw w3-margin-right"></i>Nijmegen</p>
-<p><i class="fa fa-phone fa-fw w3-margin-right"></i>06-46756972</p>
-<p><i class="fa fa-envelope fa-fw w3-margin-right"></i>sander_jac@hotmail.com</p>
-<p><i class="fa fa-car fa-fw w3-margin-right"></i>Rijbewijs B</p>
-<hr>
+        <div class="section-title">Vaardigheden</div>
+        <ul>
+            <li><i class="fa fa-check-square-o"></i>ISO & NEN Managementsystemen</li>
+            <li><i class="fa fa-search"></i>Gap-analyses & Interne audits</li>
+            <li><i class="fa fa-line-chart"></i>SWOT-analyses</li>
+            <li><i class="fa fa-sitemap"></i>Procesbeschrijvingen (PDCA)</li>
+            <li><i class="fa fa-database"></i>CRM ontwikkeling & borging</li>
+            <li><i class="fa fa-users"></i>Afstemming management & werkvloer</li>
+        </ul>
+    </div>
 
-<p class="section-title"><i class="fa fa-certificate w3-margin-right"></i>OPLEIDINGEN</p>
+    <!-- RIGHT COLUMN -->
+    <div>
 
-<div class="section-content">
-<h5><b>Zelfstudie Data-analyse en Programmeertools - 2024</b></h5>
-<ul>
-<li><strong>Python:</strong> Data-analyse en automatisering.</li>
-<li><strong>Power BI:</strong> Dashboards en rapportages.</li>
-<li><strong>MySQL:</strong> Databasestructuur en datarapportages.</li>
-<li><strong>Visual Studio:</strong> Ontwikkeling en structurering van software.</li>
-</ul>
-<hr>
-</div>
+        <div class="card">
+            <div class="section-title">Profiel</div>
+            <p>
+                Gestructureerde en analytische professional met ruime ervaring in het opzetten 
+                en verbeteren van managementsystemen conform ISO- en NEN-richtlijnen. 
+                Ik combineer strategisch inzicht met praktische toepasbaarheid op de werkvloer. 
+                Mijn focus ligt op duurzame verbetering waarbij efficiëntie en draagvlak centraal staan.
+            </p>
+        </div>
 
-<div class="section-content">
-<h5><b>Beveiligingsbeambte | TCE Eemhaven Security - 2007</b></h5>
-<p>Kennis van risicoanalyse, wet- en regelgeving en veiligheidsprocedures.</p>
-<hr>
-</div>
+        <div class="card">
+            <div class="section-title">Werkervaring</div>
 
-<div class="section-content">
-<h5><b>Sport (CIOS) | ROC Nijmegen - 2005</b></h5>
-<p>Coaching, begeleiding en didactische vaardigheden.</p>
-<hr>
-</div>
+            <div class="job-title">Bedrijfsleider | Taxi Vervoerscentrale Nederland</div>
+            <div class="job-period">Dec 2024 – Aug 2025</div>
+            <ul>
+                <li><i class="fa fa-arrow-right"></i>Herstructurering van processen en administratie</li>
+                <li><i class="fa fa-arrow-right"></i>Optimalisatie planning en personeelsinzet</li>
+                <li><i class="fa fa-arrow-right"></i>Voorkomen van dubbel werk in rapportages</li>
+            </ul>
 
-<div class="section-content">
-<h5><b>Bedrijfskunde | ROC Nijmegen - 2002</b></h5>
-<p>Bedrijfsvoering, administratie en organisatieprocessen.</p>
-</div>
+            <br>
 
-</div>
-</div>
-</div>
+            <div class="job-title">Eigenaar | Dutch Security Enforcement</div>
+            <div class="job-period">2007 – 2024</div>
+            <ul>
+                <li><i class="fa fa-arrow-right"></i>Implementatie ISO- en NEN-systemen</li>
+                <li><i class="fa fa-arrow-right"></i>Succesvol begeleiden externe audits</li>
+                <li><i class="fa fa-arrow-right"></i>Ontwikkeling CRM gekoppeld aan ISO-structuur</li>
+                <li><i class="fa fa-arrow-right"></i>SWOT-analyses vertaald naar verbeterplannen</li>
+            </ul>
+        </div>
 
-<!-- RIGHT COLUMN -->
-<div class="w3-twothird">
+        <div class="card">
+            <div class="section-title">Opleidingen</div>
+            <ul>
+                <li><i class="fa fa-graduation-cap"></i>Bedrijfskunde | ROC Nijmegen</li>
+                <li><i class="fa fa-graduation-cap"></i>CIOS Sportopleiding</li>
+                <li><i class="fa fa-graduation-cap"></i>Beveiligingsbeambte</li>
+                <li><i class="fa fa-graduation-cap"></i>Zelfstudie Data-analyse & Programmeertools</li>
+            </ul>
+        </div>
 
-<div class="w3-container w3-card w3-white w3-margin-bottom">
-<p class="section-title"><i class="fa fa-user-circle w3-margin-right"></i>OVER MIJ</p>
-<div class="section-content">
-Ik ben sterk gericht op structuur, procesoptimalisatie en continue verbetering. Binnen mijn eigen organisatie heb ik managementsystemen opgezet conform ISO- en NEN-eisen en succesvol audits doorlopen. 
-Ik werk analytisch en kijk altijd naar zowel strategisch niveau als naar de praktische uitvoering op de werkvloer. Mijn doel is om processen niet alleen compliant te maken, maar ook efficiënt en werkbaar voor medewerkers.
-</div>
-</div>
-
-<div class="w3-container w3-card w3-white w3-margin-bottom">
-<p class="section-title"><i class="fa fa-cogs w3-margin-right"></i>VAARDIGHEDEN</p>
-
-<ul class="skills-list">
-<li><i class="fa fa-check-square-o"></i>ISO & NEN Managementsystemen</li>
-<li><i class="fa fa-search"></i>Gap-analyses & Interne audits</li>
-<li><i class="fa fa-line-chart"></i>SWOT-analyses & Strategische verbetering</li>
-<li><i class="fa fa-sitemap"></i>Procesbeschrijvingen & borging (PDCA)</li>
-<li><i class="fa fa-database"></i>Ontwikkeling CRM gekoppeld aan ISO-structuur</li>
-<li><i class="fa fa-calendar"></i>Meerjarenplanning & actiebeheer</li>
-<li><i class="fa fa-users"></i>Afstemming tussen management en werkvloer</li>
-<li><i class="fa fa-file-text-o"></i>Documentbeheer & compliance</li>
-<li><i class="fa fa-language"></i>Nederlands & Engels</li>
-</ul>
+    </div>
 
 </div>
-
-<div class="w3-container w3-card w3-white w3-margin-bottom">
-<p class="section-title"><i class="fa fa-suitcase w3-margin-right"></i>WERKERVARING</p>
-
-<div class="section-content">
-<h5><b>Bedrijfsleider | Taxi Vervoerscentrale Nederland</b></h5>
-<h6 class="w3-text-light-blue">Dec 2024 – Aug 2025</h6>
-<ul>
-<li>Herstructureren van interne processen en administratie.</li>
-<li>Optimaliseren van planning, personeelsinzet en operationele efficiëntie.</li>
-<li>Verbeteren van rapportagestructuren om dubbel werk te voorkomen.</li>
-<li>Stroomlijnen van communicatie tussen management en chauffeurs.</li>
-</ul>
-<hr>
-</div>
-
-<div class="section-content">
-<h5><b>Eigenaar / Directeur | Dutch Security Enforcement</b></h5>
-<h6 class="w3-text-light-blue">2007 - 2024</h6>
-<ul>
-<li>Opzetten en implementeren van ISO- en NEN-managementsystemen.</li>
-<li>Succesvol begeleiden van externe audits.</li>
-<li>Ontwikkeling van een eigen CRM-systeem afgestemd op ISO-structuur.</li>
-<li>Uitvoeren van SWOT-analyses en vertalen naar verbeterplannen.</li>
-<li>Borgen van processen voor aanbestedingen en groei.</li>
-</ul>
-<hr>
-</div>
-
-<div class="section-content">
-<h5><b>Operationeel Manager | Klaassen Total Security</b></h5>
-<h6 class="w3-text-light-blue">2014 - 2018</h6>
-<ul>
-<li>Procesoptimalisatie conform ISO- en NEN-richtlijnen.</li>
-<li>Implementeren van verbeterpunten vanuit audits.</li>
-<li>Afstemming met werkvloer voor praktische uitvoerbaarheid.</li>
-</ul>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-<footer class="w3-container w3-center w3-margin-top" style="background: linear-gradient(145deg, #2A3D5F, #3B4E6E); color:white;">
-<p>Gedreven in het versterken van organisaties door structuur, overzicht en continue verbetering.</p>
-</footer>
 
 </body>
 </html>
